@@ -97,6 +97,10 @@ void draw() {
   if ((saving == true)&&(reciveSaving == true)) {
     image(Heart, 400, 450);
     save("mydrawing.png");
+    saving = false;
+    reciveSaving = false;
+    fill(255);
+    rect(0, 0, width, height);
   }
 
   //Drawing part  
